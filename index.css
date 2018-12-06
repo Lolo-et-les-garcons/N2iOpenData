@@ -3,23 +3,27 @@ body {
 }
 
 header {
-    background-color: aqua;
+    background-color: #353b48;
 
     width: 100%;
-    height: 50px;
+    height: 65px;
     margin-bottom: 10px;
     position: sticky;
     top: 0px;
     left: 0px;
     text-align: center;
+    display: flex;
 }
 
-.PageGenerale {
+.Titre {
+
+}
+
+.BarreRecherche {
 
 }
 
 .Ligne {
-    background-color: red;
 
     padding-left: 1%;
     padding-right: 1%;
@@ -32,37 +36,32 @@ header {
 }
 
 .caseLigne1 {
-    background-color: olivedrab;
 
     width: 48%;
     min-width: 350px;
-    height: 100%;
-    border: 3px black;
-    border-radius: 15px;
     padding: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
+    border-radius: 15px;
+    border: solid 2px black;
 }
 
 .caseLigne2 {
-    background-color: olivedrab;
 
-    width: 32%;
-    min-width: 350px;
-    height: 100%;
-    border: 3px black;
-    border-radius: 15px;
+    width: 23%;
+    min-width: 250px;
     padding: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
+    border-radius: 15px;
+    border: solid 2px black;
 }
 
 .headerCase {
-    width: 100%;
     height: 10%;
-    background-color: darkcyan;
+    background-color: #dcdde1;
     margin: 0px;
     padding: 10px;
 }
@@ -73,15 +72,14 @@ header {
 }
 
 .corpsCase {
-    width: 100%;
     height: 90%;
-    background-color: cyan;
+    background-color: #f5f6fa;
     margin: 0px;
     padding: 10px;
 }
 
 footer {
-    background-color: aqua;
+    background-color: #dcdde1;
 
 
     width: 100%;

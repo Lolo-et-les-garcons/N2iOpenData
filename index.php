@@ -24,10 +24,16 @@ require_once "./Parser.php";
 </head>
 <body>
     <header>
-        <div class="Titre"
-        <div class="BarreRecherche"></div>
+        <div class="Titre"></div>
+        <div class="BarreRecherche">
+            <input type="text" class="ChampsRecherche" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+            <button class="BoutonCherche" type="button">
+                <i class="fas fa-search"></i>
+            </button>
+            </div>
+        </div>
     </header>
-    <div class="PageGenerale">
+    <div>
         <div class="Ligne">
             <div class="caseLigne1">
                 <div class="headerCase">
@@ -42,14 +48,14 @@ require_once "./Parser.php";
                     <p><i class="fas fa-list-ul"></i> Description</p>
                 </div>
                 <div class="corpsCase">
-                    <p>Infoszadakzdgizdazdazaazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz</p>
+                    <p>Infoszadakzdgizdazdazaazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz</p>
                 </div>
             </div>
         </div>
         <div class="Ligne">
             <div class="caseLigne2">
                 <div class="headerCase">
-                    <p>Seismes</p>
+                    <p><i class="fab fa-think-peaks"></i> Seismes</p>
                 </div>
                 <div class="corpsCase">
                     <p>Infoszadakzdgizdazdazaazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz</p>
@@ -57,7 +63,7 @@ require_once "./Parser.php";
             </div>
             <div class="caseLigne2">
                 <div class="headerCase">
-                    <p>Risques</p>
+                    <p><i class="fas fa-water"></i> Innondations</p>
                 </div>
                 <div class="corpsCase">
                     <p>Infoszadakzdgizdazdazaazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz</p>
@@ -65,7 +71,15 @@ require_once "./Parser.php";
             </div>
             <div class="caseLigne2">
                 <div class="headerCase">
-                    <p>Meteo</p>
+                    <p><i class="fas fa-times"></i> Risques</p>
+                </div>
+                <div class="corpsCase">
+                    <p>Infoszadakzdgizdazdazaazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz</p>
+                </div>
+            </div>
+            <div class="caseLigne2">
+                <div class="headerCase">
+                    <p><i class="fas fa-cloud"></i> Meteo</p>
                 </div>
                 <div class="corpsCase">
                     <p>Infoszadakzdgizdazdazaazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz</p>
@@ -74,5 +88,5 @@ require_once "./Parser.php";
         </div>
     </div>
 </body>
-<footer><span class="copyright">Copyright © Your Website 2018</span></footer>
+<!--<footer><span class="copyright">Copyright © Your Website 2018</span></footer>-->
 </html>
