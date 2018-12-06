@@ -98,6 +98,7 @@ function get_risque_ville($ville)
     echo "Les risques relatifs aux ".$risque."  à ".$ville. " :" ."  <br><br>";
     foreach ($incident_Par_Ville as $data ){
       if($type_incident[$i][0] == $risque)
+      {
         echo $incident_Par_Ville[$i][2] ."<br>";
         $i2++;
       }
