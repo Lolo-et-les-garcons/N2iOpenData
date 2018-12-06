@@ -14,6 +14,9 @@ require_once "./Parser.php";
 
 
 ?>
+
+<script src="scripts.js"></script>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -34,6 +37,10 @@ require_once "./Parser.php";
         </div>
     </header>
     <div>
+    <span>Ville</span> <input id="tfCity" type ="text"></input>
+    <button type="button" onclick="requestAPI()">Requete</button>
+    <h1 id="temp"></h1>
+    <div class="PageGenerale">
         <div class="Ligne">
             <div class="caseLigne1">
                 <div class="headerCase">
