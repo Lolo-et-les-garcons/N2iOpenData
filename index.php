@@ -9,12 +9,11 @@ ini_set('display_errors', E_ERROR);
 
 require_once "./Parser.php";
 //get_risque_ville("Lanester");
-get_risque_ville_type("Montpellier", "Séisme");
+//get_risque_ville_type("Montpellier", "Séisme");
 
 
 
 ?>
-<!--
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -40,7 +39,7 @@ get_risque_ville_type("Montpellier", "Séisme");
             </div>
             <div class="caseLigne1">
                 <div class="headerCase">
-                    <p>Description</p>
+                    <p><i class="fas fa-list-ul"></i> Description</p>
                 </div>
                 <div class="corpsCase">
                     <p>Infoszadakzdgizdazdazaazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz <br>dazdazdazdazdazdazdazdazdaz</p>
@@ -77,4 +76,3 @@ get_risque_ville_type("Montpellier", "Séisme");
 </body>
 <footer><span class="copyright">Copyright © Your Website 2018</span></footer>
 </html>
--->

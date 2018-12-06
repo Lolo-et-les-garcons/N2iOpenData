@@ -106,10 +106,5 @@ function get_risque_ville_type($ville, $risque)
     $i++;
 }
 
-echo "Il y a " .$i2 ." risque(s) relatifs aux " .$risque ." à " .$ville ." <br>";
-// Display the code in a readable format
-echo "<pre>";
-echo "</pre>";
-
 
 ?>
