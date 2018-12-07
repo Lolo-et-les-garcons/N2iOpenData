@@ -15,7 +15,6 @@ require_once "./Parser.php";
 
 ?>
 
-<script src="scripts.js"></script>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -26,8 +25,8 @@ require_once "./Parser.php";
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="Titre"></div>
+    <div class="header">
+        <div class="Titre"><p>Tours <br> 37000</p></div>
         <div class="BarreRecherche">
             <input type="text" class="ChampsRecherche" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
             <button class="BoutonCherche" type="button">
@@ -35,11 +34,11 @@ require_once "./Parser.php";
             </button>
             </div>
         </div>
-    </header>
+    </div>
     <div>
-    <span>Ville</span> <input id="tfCity" type ="text"></input>
+    <!--<span>Ville</span> <input id="tfCity" type ="text"></input>
     <button type="button" onclick="requestAPI()">Requete</button>
-    <h1 id="temp"></h1>
+    <h1 id="temp"></h1>-->
     <div class="PageGenerale">
         <div class="Ligne">
             <div class="caseLigne1">
@@ -94,6 +93,8 @@ require_once "./Parser.php";
             </div>
         </div>
     </div>
+
+        <script src="scripts.js"></script>
 </body>
 <!--<footer><span class="copyright">Copyright © Your Website 2018</span></footer>-->
 </html>

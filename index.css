@@ -1,9 +1,24 @@
+html {
+
+    background-image: url("./Ciel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p {
+    opacity: 1;
+    margin: 0px;
+    color: white;
+}
+
 body {
+    background-image: linear-gradient(rgba(53,59,72, 0.3), rgba(53,59,72, 0));
+    background-repeat: no-repeat;
     margin: 0px;
 }
 
-header {
-    background-color: #353b48;
+.header {
 
     width: 100%;
     height: 65px;
@@ -13,14 +28,22 @@ header {
     left: 0px;
     text-align: center;
     display: flex;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.3);
 }
 
-.Titre {
+.fond {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
 
+.Titre{
+    opacity: 1;
 }
 
 .BarreRecherche {
-
+    opacity: 1;
+    color: white;
 }
 
 .Ligne {
@@ -44,7 +67,7 @@ header {
     margin-bottom: 10px;
     overflow: hidden;
     border-radius: 15px;
-    border: solid 2px black;
+    #border: solid 2px black;
 }
 
 .caseLigne2 {
@@ -56,24 +79,29 @@ header {
     margin-bottom: 10px;
     overflow: hidden;
     border-radius: 15px;
-    border: solid 2px black;
+    #border: solid 2px black;
 }
 
 .headerCase {
+    opacity: 0.6;
     height: 10%;
-    background-color: #dcdde1;
+    background-color: #222f3e;
     margin: 0px;
     padding: 10px;
+    border-bottom: solid 2px #2a3746;
+
 }
 
 .headerCase p {
+    opacity: 1;
     vertical-align:middle;
     display:inline-block;
 }
 
 .corpsCase {
+    opacity: 0.6;
     height: 90%;
-    background-color: #f5f6fa;
+    background-color: #222f3e;
     margin: 0px;
     padding: 10px;
 }
@@ -91,9 +119,7 @@ footer {
     vertical-align: middle;
 }
 
-p {
-    margin: 0px;
-}
+
 
 .copyright {
     line-height: 75px;
