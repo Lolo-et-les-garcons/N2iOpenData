@@ -36,9 +36,7 @@ require_once "./Parser.php";
         </div>
     </div>
     <div>
-    <!--<span>Ville</span> <input id="tfCity" type ="text"></input>
-    <button type="button" onclick="requestAPI()">Requete</button>
-    <h1 id="temp"></h1>-->
+
     <div class="PageGenerale">
         <div class="Ligne">
             <div class="caseLigne1">
