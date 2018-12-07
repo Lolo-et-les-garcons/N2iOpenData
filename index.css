@@ -1,9 +1,23 @@
 html {
 
-    background-image: url("./Ciel.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url("./Ciel.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("./Ciel.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {
@@ -34,6 +48,10 @@ body {
     border-bottom: solid 2px rgba(255, 255, 255, 0.3);
 }
 
+
+a {
+  color: white;
+}
 .Titre{
     font-size: 20pt;
     line-height: 65px;
@@ -44,54 +62,41 @@ body {
     color: white;
 }
 
-.Ligne {
-
-    padding-left: 1%;
-    padding-right: 1%;
-    width: 98%;
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .caseLigne1 {
 
-    width: 48%;
-    min-width: 350px;
-    padding: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 30px;
+    width: 50%;
     overflow: hidden;
-    border-radius: 15px;
-    #border: solid 2px black;
+    border-radius: 5px;
 }
 
 .caseLigne2 {
 
-    width: 23%;
-    min-width: 250px;
-    padding: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 70%;
+    margin : 20px;
     overflow: hidden;
-    border-radius: 15px;
-    #border: solid 2px black;
+    border-radius: 5px;
+}
+
+.Ville{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .headerCase {
     height: 10%;
     background-color: rgba(34, 47, 62, 0.4);
     margin: 0px;
-    padding: 10px;
-    border-bottom: solid 2px rgba(42, 55, 70, 0.2);
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
 
 }
 
+
 .headerCase p {
-    opacity: 1;
+    color : silver;
     vertical-align:middle;
     display:inline-block;
 }
@@ -101,6 +106,9 @@ body {
     background-color: rgba(34, 47, 62, 0.4);
     margin: 0px;
     padding: 10px;
+}
+.custom_nav {
+    background: rgba(0, 0, 0, 0.4);
 }
 
 footer {

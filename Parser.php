@@ -1,6 +1,7 @@
 <?php
 function get_risque_ville($ville)
 {
+  ini_set('memory_limit', '-1');
   $fichier = 'risq_gaspar.csv';
 
   // The nested array to hold all the arrays
@@ -38,8 +39,6 @@ function get_risque_ville($ville)
     $i++;
   }
   $i = 0;
-
-  echo $ville." : <br>";
   echo "Il y a ".$i2." risque à ".$ville."  <br><br>";
   foreach ($incident_Par_Ville as $data ){
     echo $incident_Par_Ville[$i][2] ."<br>";
@@ -49,6 +48,7 @@ function get_risque_ville($ville)
   // Display the code in a readable format
   echo "<pre>";
   echo "</pre>";
+
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
@@ -58,6 +58,7 @@ function get_risque_ville($ville)
 
   function get_risque_ville_type($ville, $risque)
   {
+    ini_set('memory_limit', '-1');
     $fichier = 'risq_gaspar.csv';
 
     // The nested array to hold all the arrays
@@ -97,7 +98,6 @@ function get_risque_ville($ville)
     }
     $i = 0;
 
-    echo $ville." : <br>";
     echo "Les risques relatifs aux ".$risque."  à ".$ville. " :" ."  <br><br>";
     foreach ($incident_Par_Ville as $data ){
       if($type_incident[$i][0] == $risque)
@@ -107,9 +107,13 @@ function get_risque_ville($ville)
       }
       $i++;
     }
-
-    echo "Il y a " .$i2 ." risque(s) relatifs aux " .$risque ." à " .$ville ." <br>";
+    if($risque = "Risque")
+    {
+      $risque = "Risque industriel";
+    }
+    echo "<br> Il y a " .$i2 ." risque(s) relatifs aux " .$risque ." à " .$ville ." <br>";
     // Display the code in a readable format
+
     echo "<pre>";
     echo "</pre>";
     }
@@ -119,6 +123,7 @@ function get_risque_ville($ville)
 //------------------------------------------------------------------------------------------------------------------------------------------------
     function get_info_ville($ville)
     {
+      ini_set('memory_limit', '-1');
       $fichier = 'Appartenance-géographique.csv';
 
       // The nested array to hold all the arrays
@@ -162,11 +167,12 @@ function get_risque_ville($ville)
       foreach ($incident_Par_Ville as $data ){
         echo "Le département de ".$ville." est le : ".$incident_Par_Ville[$i][2] ."<br>";
         $habitants = explode(';', $incident_Par_Ville[$i][17]);
-        echo "La population des ".$ville." est de : ".$habitants[2] . " habitants";
+        echo "La population de ".$ville." est de : ".$habitants[2] . " habitants";
 
         $i++;
       }
       // Display the code in a readable format
+
       echo "<pre>";
       echo "</pre>";
     }
