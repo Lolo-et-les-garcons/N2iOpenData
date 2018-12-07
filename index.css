@@ -20,7 +20,7 @@ body {
 
 .header {
 
-    width: 100%;
+    width: 98%;
     height: 65px;
     margin-bottom: 10px;
     position: sticky;
@@ -28,21 +28,19 @@ body {
     left: 0px;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
     border-bottom: solid 2px rgba(255, 255, 255, 0.3);
 }
 
-.fond {
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-}
-
 .Titre{
-    opacity: 1;
+    font-size: 20pt;
+    line-height: 65px;
 }
 
 .BarreRecherche {
-    opacity: 1;
+    line-height: 65px;
     color: white;
 }
 
@@ -53,6 +51,7 @@ body {
     width: 98%;
     display: flex;
     flex-wrap: wrap;
+
     justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -83,12 +82,11 @@ body {
 }
 
 .headerCase {
-    opacity: 0.6;
     height: 10%;
-    background-color: #222f3e;
+    background-color: rgba(34, 47, 62, 0.4);
     margin: 0px;
     padding: 10px;
-    border-bottom: solid 2px #2a3746;
+    border-bottom: solid 2px rgba(42, 55, 70, 0.2);
 
 }
 
@@ -99,9 +97,8 @@ body {
 }
 
 .corpsCase {
-    opacity: 0.6;
     height: 90%;
-    background-color: #222f3e;
+    background-color: rgba(34, 47, 62, 0.4);
     margin: 0px;
     padding: 10px;
 }

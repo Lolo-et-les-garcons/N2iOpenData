@@ -26,7 +26,7 @@ require_once "./Parser.php";
 </head>
 <body>
     <div class="header">
-        <div class="Titre"><p>Tours <br> 37000</p></div>
+        <div class="Titre"><p>Tours | 37000</p></div>
         <div class="BarreRecherche">
             <input type="text" class="ChampsRecherche" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
             <button class="BoutonCherche" type="button">
